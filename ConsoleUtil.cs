@@ -22,11 +22,6 @@ namespace FastGithub
         [SupportedOSPlatform("windows")]
         private static extern bool SetConsoleMode(IntPtr hConsoleHandle, uint dwMode);
 
-        /// <summary>
-        /// 禁用快速编辑模式
-        /// </summary>
-        /// <returns></returns>
-        public static bool DisableQuickEdit()
         {
             if (OperatingSystem.IsWindows())
             {
